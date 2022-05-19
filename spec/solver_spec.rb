@@ -79,7 +79,7 @@ RSpec.describe Solver do
   it 'Reverse a phrase' do
     word = 'hello roma'
     expect(@solver.reverse(word)).to be == 'amor olleh'
-  end 
+  end
 
   it 'Incorrect number of parameters' do
     expect { @solver.reverse }.to raise_error(ArgumentError)
@@ -88,5 +88,51 @@ RSpec.describe Solver do
   it 'Empty string as parameter' do
     expect { @solver.reverse('') }.to raise_error(ArgumentError)
   end
+end
 
+RSpec.describe Solver do
+  before :each do
+    @solver = Solver.new
+  end
+
+  it 'receives a wrong type argument' do
+    integer = 'str'
+    expect { @solver.fizzbuzz(integer) }.to raise_error(ArgumentError)
+  end
+
+  it 'receives number 3 return fizz' do
+    integer = 3
+    answer = @solver.fizzbuzz(integer)
+    expect(answer).to be == 'fizz'
+  end
+
+  it 'receives number 5 return fizz' do
+    integer = 5
+    answer = @solver.fizzbuzz(integer)
+    expect(answer).to be == 'buzz'
+  end
+
+  it 'receives number 100 return fizz' do
+    integer = 100
+    answer = @solver.fizzbuzz(integer)
+    expect(answer).to be == 'buzz'
+  end
+
+  it 'receives number 15 return fizz' do
+    integer = 15
+    answer = @solver.fizzbuzz(integer)
+    expect(answer).to be == 'fizzbuzz'
+  end
+
+  it 'receives number 90 return fizz' do
+    integer = 90
+    answer = @solver.fizzbuzz(integer)
+    expect(answer).to be == 'fizzbuzz'
+  end
+
+  it 'receives number 2 return fizz' do
+    integer = 2
+    answer = @solver.fizzbuzz(integer)
+    expect(answer).to be == 2
+  end
 end
