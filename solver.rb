@@ -7,4 +7,8 @@ class Solver
 
     number * factorial(number - 1)
   end
+
+  def reverse(word)
+    raise ArgumentError, 'The argument must be an non-empty string' if word.class != String
+  end
 end
