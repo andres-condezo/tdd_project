@@ -1,35 +1,57 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # TddProject
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tdd_project`. To experiment with that code, run `bin/console` for an interactive prompt.
+A class with three methods to implement the test-driven development(TDD).
 
-TODO: Delete this and the text above, and describe your gem
+## Built With
 
-## Installation
+- Ruby
+- Rspec
 
-Add this line to your application's Gemfile:
+## Getting Started
 
-```ruby
-gem 'tdd_project'
-```
+To get a local copy follow these simple example steps.
 
-And then execute:
+1.- Open the terminal window and clone the repository using this command:
+`git clone git@github.com:andres-condezo/tdd_project.git`
 
-    $ bundle install
+2.- Change the directory to the tdd_project directory
+`cd tdd_project`
 
-Or install it yourself as:
+3.- Install the project's dependencies by running this command:
+`bundle install`
 
-    $ gem install tdd_project
+4.- Run the tests using this command:
+`rspec`
 
-## Usage
 
-TODO: Write usage instructions here
+## Authors
 
-## Development
+👤 **Victor Peralta**
+- GitHub: [@VicPeralta](https://github.com/VicPeralta)
+- Twitter: [@VicPeralta](https://twitter.com/VicPeralta)
+- Linkedin: [@VicPeralta](https://www.linkedin.com/in/vicperalta/)
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+👤 **Andres Condezo**
+- GitHub: [@andres-condezo](https://github.com/andres-condezo)
+- Twitter: [@andres_condezo](https://twitter.com/andres_condezo)
+- Linkedin: [@andres-condezo](https://www.linkedin.com/in/andres-condezo/)
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+👤 **Behnam Aghaali**
 
-## Contributing
+- GitHub: [@Behnam1369](https://github.com/Behnam1369)
+- Twitter: [@behnamagh1369](https://twitter.com/behnamagh1369)
+- LinkedIn: [@behnam-aghaali](https://www.linkedin.com/in/behnam-aghaali)
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tdd_project.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

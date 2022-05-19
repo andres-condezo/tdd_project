@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'school/library'
+require 'tdd_project'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
