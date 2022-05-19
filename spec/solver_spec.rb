@@ -77,8 +77,8 @@ RSpec.describe Solver do
   end
 
   it 'Reverse a phrase' do
-    word = 'hello'
-    expect(@solver.reverse(word)).to be == 'olleh amor'
+    word = 'hello roma'
+    expect(@solver.reverse(word)).to be == 'amor olleh'
   end 
 
   it 'Incorrect number of parameters' do
