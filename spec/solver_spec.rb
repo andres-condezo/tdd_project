@@ -71,6 +71,16 @@ RSpec.describe Solver do
     expect(@solver.reverse(word)).to be == 'amor'
   end
 
+  it 'Reverse hello' do
+    word = 'hello'
+    expect(@solver.reverse(word)).to be == 'olleh'
+  end
+
+  it 'Reverse a phrase' do
+    word = 'hello'
+    expect(@solver.reverse(word)).to be == 'olleh amor'
+  end 
+
   it 'Incorrect number of parameters' do
     expect { @solver.reverse }.to raise_error(ArgumentError)
   end
