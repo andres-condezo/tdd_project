@@ -10,6 +10,8 @@ class Solver
 
   def reverse(word)
     raise ArgumentError, 'The argument must be an non-empty string' if word.class != String
+    raise ArgumentError, 'The argument must be an non-empty string' if word.empty?
+
     word.reverse
   end
 end
