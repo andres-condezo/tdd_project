@@ -1,6 +1,6 @@
 require './solver'
 
-RSpec.describe Solver do
+RSpec.describe 'Factorial' do
   before :each do
     @solver = Solver.new
   end
@@ -56,7 +56,7 @@ RSpec.describe Solver do
   end
 end
 
-RSpec.describe Solver do
+RSpec.describe 'Reverse' do
   before :each do
     @solver = Solver.new
   end
@@ -90,7 +90,7 @@ RSpec.describe Solver do
   end
 end
 
-RSpec.describe Solver do
+RSpec.describe 'FizzBuzz' do
   before :each do
     @solver = Solver.new
   end
@@ -118,19 +118,19 @@ RSpec.describe Solver do
     expect(answer).to be == 'buzz'
   end
 
-  it 'receives number 15 return fizz' do
+  it 'receives number 15 return fizzbuzz' do
     integer = 15
     answer = @solver.fizzbuzz(integer)
     expect(answer).to be == 'fizzbuzz'
   end
 
-  it 'receives number 90 return fizz' do
+  it 'receives number 90 return fizzbuzz' do
     integer = 90
     answer = @solver.fizzbuzz(integer)
     expect(answer).to be == 'fizzbuzz'
   end
 
-  it 'receives number 2 return fizz' do
+  it 'receives number 2 return 2' do
     integer = 2
     answer = @solver.fizzbuzz(integer)
     expect(answer).to be == 2

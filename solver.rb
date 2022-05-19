@@ -14,4 +14,15 @@ class Solver
 
     word.reverse
   end
+
+  def fizzbuzz(number)
+    raise ArgumentError, 'The input should be an integer' if number.class != Integer
+    raise ArgumentError, 'The input should be non-negative' if number.negative?
+
+    return 'fizzbuzz' if (number % 15).zero?
+    return 'fizz' if (number % 3).zero?
+    return 'buzz' if (number % 5).zero?
+
+    number
+  end
 end
