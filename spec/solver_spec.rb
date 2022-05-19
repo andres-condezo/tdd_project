@@ -10,14 +10,14 @@ RSpec.describe Solver do
 
   describe 'Factorial'
   it 'returns the factorial of 3' do
-    allow(@solver).to receive(:factorial).and_return(6)
+    # allow(@solver).to receive(:factorial).and_return(6)
     n = 3
     ans = @solver.factorial(n)
     expect(ans).to be == 6
   end
 
   it 'returns the factorial of 10' do
-    allow(@solver).to receive(:factorial).and_return(3_628_800)
+    # allow(@solver).to receive(:factorial).and_return(3_628_800)
     n = 10
     ans = @solver.factorial(n)
     expect(ans).to be == 3_628_800
@@ -49,7 +49,7 @@ RSpec.describe Solver do
   end
 
   it 'receives zero and returns 1' do
-    allow(@solver).to receive(:factorial).and_return(1)
+    # allow(@solver).to receive(:factorial).and_return(1)
     n = 0
     ans = @solver.factorial(n)
     expect(ans).to be == 1
