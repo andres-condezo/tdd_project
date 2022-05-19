@@ -55,3 +55,15 @@ RSpec.describe Solver do
     expect(ans).to be == 1
   end
 end
+
+RSpec.describe Solver do
+  before :each do
+    @solver = Solver.new
+  end
+  
+  it 'Incorrect parameter type' do
+    word = 1
+    expect { @solver.reverse(word) }.to raise_error(ArgumentError)
+  end
+
+end
