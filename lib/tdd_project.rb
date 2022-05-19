@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-require_relative "tdd_project/version"
+require "tdd_project/version"
 
 module TddProject
   class Error < StandardError; end
