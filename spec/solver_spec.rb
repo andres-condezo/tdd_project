@@ -75,4 +75,8 @@ RSpec.describe Solver do
     expect { @solver.reverse }.to raise_error(ArgumentError)
   end
 
+  it 'Empty string as parameter' do
+    expect { @solver.reverse('') }.to raise_error(ArgumentError)
+  end
+
 end
